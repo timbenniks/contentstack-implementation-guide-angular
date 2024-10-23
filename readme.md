@@ -1,4 +1,6 @@
-# Contentstack SDK implemenation guide: Angualr 18
+> Note that this project is not an official Contentstack maintained repo yet. This is a work in progress and will be updated over time. When it is finished enough it will move to the official Contentstack Github home.
+
+# Contentstack SDK implemenation guide: Angular 18
 
 This is a bare-bones example to connect Angular to Contentstack.
 This example covers the following items:
@@ -48,7 +50,9 @@ csdx cm:stacks:seed --repo "timbenniks/contentstack-implementation-guides-seed" 
 
 Go to Settings > Tokens and create a delivery token. Select the `preview` scope and turn on `Create preview token`
 
-### 8. Fill out your .env file.
+> In the case of Angular 18, check the settings in the environment and make sure the url is: `http://localhost:4200/` instead of `http://localhost:3000/`
+
+### 8. Fill out your environment settings.
 
 Now that you have a delivery token, you can fill out the `./src/environments/environment.ts` file in your codebase.
 
