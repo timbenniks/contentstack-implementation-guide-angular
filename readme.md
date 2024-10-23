@@ -90,3 +90,7 @@ npm run start
 
 Go to Entries and select the only entry in the list.
 In the sidebar, click on the live preview icon.
+
+## Caveats
+
+Due to a small issue in the latest version of the `@contentstack/live-preview-utils`, this repo uses version `1.4.5`.
