@@ -41,7 +41,7 @@ In your Contentstack Organization dashboard find `Org admin` and copy your Organ
 Make sure to replace `<YOUR_ORG_ID>` with your actual Organization ID and run the below.
 
 ```bash
-csdx cm:stacks:seed --repo "timbenniks/contentstack-implementation-guides-seed" --org "<YOUR_ORG_ID>" -n "Implementation Guide Next"
+csdx cm:stacks:seed --repo "timbenniks/contentstack-implementation-guides-seed" --org "<YOUR_ORG_ID>" -n "Implementation Guide Angular"
 ```
 
 ### 7. Create a new delivery token.
