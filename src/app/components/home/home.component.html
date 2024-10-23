@@ -1,0 +1,30 @@
+<main class="max-w-screen-2xl mx-auto">
+  <section class="p-4">
+
+    <p *ngIf="error">{{error}}</p>
+    
+    <h1 *ngIf="page?.title"
+        class="text-4xl font-bold mb-4"
+        [attr.data-cslp]="page?.$ && page?.$.title['data-cslp']">
+      {{ page?.title }}
+    </h1>
+
+    <p *ngIf="page?.description"
+       class="mb-4"
+       [attr.data-cslp]="page?.$ && page?.$.description['data-cslp']">
+      {{ page?.description }}
+    </p>
+
+    <img *ngIf="page?.image"
+      class="mb-4"
+      width="500"
+      [src]="page?.image?.url"
+      [alt]="page?.image?.title"
+      [attr.data-cslp]="page?.image.$ && page?.image.$.url['data-cslp']" />
+
+    <div *ngIf="page?.rich_text"
+      [attr.data-cslp]="page?.$ && page?.$.rich_text['data-cslp']"
+      [innerHTML]="page?.rich_text">
+    </div>
+  </section>
+</main>
