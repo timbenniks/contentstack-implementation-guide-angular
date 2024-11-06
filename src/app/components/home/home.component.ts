@@ -20,6 +20,7 @@ export class HomeComponent implements OnInit {
     this.contentstackService.getEntryByUrl('page', '/').subscribe({
       next: (result) => {
         this.page = result;
+        console.log(result)
       },
       error: (err) => {
         this.error = 'Error loading content. Please check your Contentstack configuration.';

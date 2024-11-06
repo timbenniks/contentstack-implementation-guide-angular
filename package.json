@@ -1,6 +1,6 @@
 {
   "name": "contentstack-implementation-guide-angular",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "private": false,
   "repository": {
     "type": "git",
@@ -21,8 +21,8 @@
     "@angular/core": "^18.2.9",
     "@angular/platform-browser": "^18.2.9",
     "@angular/router": "^18.2.9",
-    "@contentstack/delivery-sdk": "^4.3.0",
-    "@contentstack/live-preview-utils": "^1.4.5",
+    "@contentstack/delivery-sdk": "4.3.0",
+    "@contentstack/live-preview-utils": "3.0.0",
     "rxjs": "^7.8.1",
     "tslib": "^2.8.0",
     "zone.js": "~0.14.10"

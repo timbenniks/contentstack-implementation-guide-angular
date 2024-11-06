@@ -32,10 +32,7 @@
             "outputPath": "dist/demo",
             "polyfills": ["zone.js"],
             "scripts": [],
-            "styles": [
-              "src/global_styles.css",
-              "node_modules/@contentstack/live-preview-utils/dist/main.css"
-            ],
+            "styles": ["src/global_styles.css"],
             "tsConfig": "tsconfig.app.json"
           }
         },

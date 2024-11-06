@@ -5,7 +5,7 @@ import { Observable, from } from 'rxjs';
 import type { Page } from '../../../types'
 import ContentstackLivePreview from "@contentstack/live-preview-utils";
 import { environment } from '../../environments/environment';
-import { IStackSdk } from '@contentstack/live-preview-utils/dist/src/utils/types';
+import { IStackSdk } from '@contentstack/live-preview-utils';
 
 type Stack = ReturnType<typeof contentstack.default.stack>;
 
@@ -35,6 +35,7 @@ export class ContentstackService {
       ContentstackLivePreview.init({
         ssr: false,
         enable: true,
+        mode: "builder",
         stackSdk: (this.stack as Stack).config as IStackSdk,
         stackDetails: {
           apiKey: config.apiKey,
