@@ -1,6 +1,6 @@
 {
   "name": "contentstack-implementation-guide-angular",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "repository": {
     "type": "git",
@@ -16,23 +16,23 @@
     "build": "ng build"
   },
   "dependencies": {
-    "@angular/common": "^18.2.9",
+    "@angular/common": "^18.2.11",
     "@angular/compiler": "^18.1.0",
-    "@angular/core": "^18.2.9",
-    "@angular/platform-browser": "^18.2.9",
-    "@angular/router": "^18.2.9",
-    "@contentstack/delivery-sdk": "4.3.0",
+    "@angular/core": "^18.2.11",
+    "@angular/platform-browser": "^18.2.11",
+    "@angular/router": "^18.2.11",
+    "@contentstack/delivery-sdk": "4.4.1",
     "@contentstack/live-preview-utils": "3.0.0",
     "rxjs": "^7.8.1",
     "tslib": "^2.8.0",
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.2.10",
-    "@angular/cli": "^18.2.10",
-    "@angular/compiler-cli": "^18.2.9",
+    "@angular-devkit/build-angular": "^18.2.11",
+    "@angular/cli": "^18.2.11",
+    "@angular/compiler-cli": "^18.2.11",
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.47",
+    "postcss": "^8.4.49",
     "tailwindcss": "^3.4.14",
     "typescript": "~5.5.4"
   }

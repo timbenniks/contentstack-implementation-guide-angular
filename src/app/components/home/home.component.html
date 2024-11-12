@@ -1,4 +1,4 @@
-<main class="max-w-screen-2xl mx-auto">
+<main class="max-w-screen-md mx-auto">
   <section class="p-4">
 
     <p *ngIf="error">{{error}}</p>
@@ -32,7 +32,7 @@
       <div *ngFor="let item of page?.blocks; let index = index"
         [attr.data-cslp]="page?.$ && page?.$['blocks__' + index]['data-cslp']"
         [ngClass]="{
-          'flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4': true,
+          'flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 bg-slate-100': true,
           'md:flex-row': item.block.layout === 'image_left',
           'md:flex-row-reverse': item.block.layout !== 'image_left'
         }">
