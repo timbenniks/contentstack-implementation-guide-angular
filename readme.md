@@ -1,8 +1,8 @@
 > Note that this project is not an official Contentstack maintained repo yet. This is a work in progress and will be updated over time. When it is finished enough it will move to the official Contentstack Github home.
 
-# Contentstack SDK implemenation guide: Angular 18
+# Contentstack Kickstart: Angular 18
 
-This is a bare-bones example to connect Angular to Contentstack.
+This is a kickstart example to connect Angular to Contentstack.
 This example covers the following items:
 
 - SDK initialization
@@ -17,6 +17,19 @@ Follow the following steps to seed a Stack that this codebase understands.
 
 ```bash
 npm install -g @contentstack/cli
+```
+
+#### Using the CLI for the first time?
+
+It might ask you to set your default region.
+You can get all regions and their codes [here](https://www.contentstack.com/docs/developers/cli/configure-regions-in-the-cli) or run `csdx config:get:region`.
+
+> Beware, Free Contentstack developer accounts are bound to the EU region. We still use the CDN the API is lightning fast.
+
+Set your region like so:
+
+```bash
+csdx config:set:region EU
 ```
 
 ### Log in via the CLI
@@ -34,7 +47,7 @@ In your Contentstack Organization dashboard find `Org admin` and copy your Organ
 Make sure to replace `<YOUR_ORG_ID>` with your actual Organization ID and run the below.
 
 ```bash
-csdx cm:stacks:seed --repo "timbenniks/contentstack-implementation-guides-seed" --org "<YOUR_ORG_ID>" -n "Implementation Guide"
+csdx cm:stacks:seed --repo "timbenniks/contentstack-implementation-guides-seed" --org "<YOUR_ORG_ID>" -n "Angular Kickstart"
 ```
 
 ### Create a new delivery token.
@@ -51,9 +64,9 @@ Now that you have a delivery token, you can fill out the `./src/environments/env
 export const environment = {
   production: false,
   contentstack: {
-    apiKey: "blte766efb491f96715",
-    deliveryToken: "cs620decb0e6bb175e31210ce9",
-    previewToken: "csa128deacffe0b26386090915",
+    apiKey: "<YOUR_API_KEY>",
+    deliveryToken: "<YOUR_DELIVERY_TOKEN>",
+    previewToken: "<YOUR_PREVIEW_TOKEN>",
     environment: "preview",
     region: "EU",
     preview: true,
